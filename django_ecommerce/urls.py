@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     # url(r'^django_ecommerce/', include('django_ecommerce.foo.urls')),
     url(r'^$', 'main.views.index', name='home'),
     url(r'^pages/', include('django.contrib.flatpages.urls')),
+    url(r'^contact/', 'contact.views.contact', name='contact'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
